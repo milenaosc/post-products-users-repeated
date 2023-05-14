@@ -6,6 +6,7 @@ import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Posts from "./pages/Posts/Posts";
 import Home from "./pages/Home/Home";
+import PostDetail from "./components/PostDetail/PostDetail";
 
 import { Provider } from "react-redux";
 import store from "./store/store";
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/posts/detail/:id",
-        element: <PostDetail/>
+        element: <PostDetail />,
       },
     ],
   },
