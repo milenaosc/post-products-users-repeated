@@ -19,6 +19,12 @@ const NavBar = () => {
         >
           Posts
         </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "")}
+          to="/users"
+        >
+          Users
+        </NavLink>
       </ul>
     </div>
   );
