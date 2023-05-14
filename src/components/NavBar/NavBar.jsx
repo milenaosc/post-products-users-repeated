@@ -7,8 +7,18 @@ const NavBar = () => {
     <div className="navbar container">
       <div>Logo</div>
       <ul>
-        <NavLink path="/">Home</NavLink>
-        <NavLink path="/posts">Posts</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "")}
+          to="/posts"
+        >
+          Posts
+        </NavLink>
       </ul>
     </div>
   );

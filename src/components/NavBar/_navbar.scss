@@ -2,5 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
+  background-color: rgb(103, 166, 103);
+  padding-left: 16px;
+  ul {
+    margin-right: 16px;
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    a {
+      text-decoration: none;
+      color: deeppink;
+    }
+    .active {
+      color: White;
+    }
+  }
 }
-
