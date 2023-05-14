@@ -4,8 +4,8 @@ import "./index.scss";
 import App from "./App";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Posts from "../public/pages/Posts/Posts";
-import Home from "../public/pages/Home/Home";
+import Posts from "./pages/Posts/Posts";
+import Home from "./pages/Home/Home";
 
 const router = createBrowserRouter([
   {
