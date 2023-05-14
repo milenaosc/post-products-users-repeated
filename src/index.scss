@@ -1,0 +1,15 @@
+@import "./components/NavBar/navbar";
+@import "./pages/Home/home";
+@import "./pages/Posts/posts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
