@@ -10,11 +10,12 @@ const Users = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     UserService.getAllUsers().then((res) => {
+      console.log(res.data);
       dispatch(getAllUsers(res.data.users));
     });
   }, []);
   return (
-    <div>
+    <div className="container">
       {allUsers?.map((item) => (
         <SingleUser key={item?.id} user={item} />
       ))}

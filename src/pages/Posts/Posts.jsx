@@ -13,7 +13,6 @@ const Posts = () => {
 
   useEffect(() => {
     PostService.getAllPosts().then((res) => {
-      console.log(res.data.posts);
       dispatch(getAllPosts(res.data.posts));
     });
   }, []);
