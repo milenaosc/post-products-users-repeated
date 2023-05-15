@@ -1,10 +1,9 @@
 a.post-card {
-  position: relative;
   text-decoration: none;
-  color: black;
+  color: black; //override-uje linkov styling za sve active itd
   display: flex;
   flex-direction: column;
-  place-content: space-evenly;
+  place-content: space-evenly; //za placing texta
   font-size: xx-large;
   text-align: center;
   gap: 16px;

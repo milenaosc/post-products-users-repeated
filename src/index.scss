@@ -1,7 +1,8 @@
 @import "./components/NavBar/navbar";
 @import "./pages/Home/home";
 @import "./pages/Posts/posts";
-
+@import "./pages/Users/users";
+@import "./components/SingleUser/singleuser";
 * {
   margin: 0;
   padding: 0;

@@ -18,7 +18,7 @@ const Posts = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container posts">
       {allPosts.map((item) => (
         <SinglePost key={item?.id} post={item}>
           {item?.title}

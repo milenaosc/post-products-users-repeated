@@ -18,7 +18,12 @@ const PostDetail = () => {
     });
   }, []);
 
-  return <div className="container">{currentPost?.body}</div>;
+  return (
+    <div className="container">
+      <h1>{currentPost?.title}</h1>
+      {currentPost?.body}
+    </div>
+  );
 };
 
 export default PostDetail;

@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./_singlepost.scss";
 
 const SinglePost = ({ post }) => {
   return (
-    <div>
-      {post?.title} <Link to={`/posts/detail/${post?.id}`}>Detail</Link>{" "}
-    </div>
+    <Link className="post-card-1" to={`/posts/detail/${post?.id}`}>
+      {post?.title}
+    </Link>
   );
 };
 
